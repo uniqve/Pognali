@@ -67,10 +67,10 @@
                         <span class="text__block-color">4</span>
                     </div>
                 </div>
-            </main>
+            
         </section>
         <section>
-                <header class="second-header">
+                <header class="second-header sticky-header">
                     <div class="header__block">
                         <div class="header__logo">
                             <img class="logo" src="/image/second_logo.png" alt="logo">
@@ -96,10 +96,8 @@
                 </header>
                 
                 
-                <div class="container">
-                    
-                    <img class="background-img" src="/image/background_about.jpg" alt="background-image">
-                    
+                <section class="first-section">
+                    <div class="container">
                     <div class="container__service">
                         <div class="container__text">
                             <h2 class="service-title">О сервисе</h2>
@@ -117,7 +115,9 @@
                     </div>
                     
                     <img class="img-back" src="/image/img_back.png" alt="img_back">
-                </div>
+                    </div>
+                    
+                </section>
             </section>
 
 
@@ -178,6 +178,7 @@
                         
                     </div>
                     <div class="directions">
+                        
                         <h2>Направления</h2>
                         <p>Мы не продаем туры <br/>
                             и ничего не рекламируем. 
@@ -185,7 +186,7 @@
                             куда хотели бы отправиться<br/>
                             и чем можно там заняться.
                         </p>
-                        <button class="second-btn"><span class="details">Подробнее</span><img src="/image/Polygon 1.svg" alt="play"></button> 
+                        <button class="second-btn"><span class="details">Показать все</span><img src="/image/Polygon 1.svg" alt="play"></button> 
                     </div>
                 </div>
             </div>
@@ -197,21 +198,25 @@
                     <h2>Попутчики</h2>
                     <p>Все мы индивидуальны и у каждого
                      свой взгляд на идеальный отдых. 
-                     Одному нужен пляж и коктейль, 
+                     Одному нужен пляж и коктейль, <br/>
                      а другому маршрут для хайкинга. 
                      </p>
                      <p>
-                         Теперь можно легко найти единомышленников!
+                         Теперь можно легко <br/> найти единомышленников!
                      </p>
                      <button class="third-btn"><span class="details">Подробнее</span><img src="/image/Polygon 1.svg" alt="plays"></button>
                 </div>
                
                 <div class="travelers-cards">
                     <div class="travelers__card">
-                        <!-- <div class="rating">
-                            <div class="circle"></div>
-                        </div> -->
+                        <div class="rating">
+                            <img src="/image/mark.png" alt="rating">
+                        </div>
                             <img class="person-image" src="/image/Layer 13 1.jpg" alt="Таня Фирсова" >
+                            <div class="travelers-countries">
+                                <img src="/image/флаги.png" alt="Флаги">
+                            </div>
+                            
                             <div class="travelers__cards-text">
                             <h3 class="person-name-1">Таня Фирсова</h3>
                         <p class="hobbies">#ЗОЖ #ПП #Фитнес #пляж <br/> #авокадо #смузи</p>
@@ -225,10 +230,15 @@
                     </div>
                     
                         <div class="travelers__card">
-                            <!-- <div class="rating">
-                                <div class="circle"></div>
-                            </div> -->
-                                <img class="person-image" src="/image/demin-desktop 1.jpg" alt="Таня Фирсова" >
+                            <div class="rating">
+                                <img src="/image/mark (1).png" alt="rating">
+                            </div>
+                                <img class="person-image" src="/image/demin-desktop 1.jpg" alt="Петя Демин" >
+                                <div class="travelers-countries">
+                                    <img src="/image/Belgium 50% (1).png" alt="Бельгия">
+                                <img src="/image/Czech 2.png" alt="Чехия">
+                                </div>
+                                
                                 <div class="travelers__cards-text">
                                 <h3 class="person-name-2">Петя Демин</h3>
                             <p class="hobbies">#бургер #бар #футбол <br/> #концерт #крафт</p>
@@ -279,16 +289,111 @@
                         <img src="/image/rates.png" alt="">
                     </div>
                 </div>
-                <a class="tariffs-buisnes" href="#">Показать тарифы для бизнеса</a>
+               <a class="tariffs-buisnes" id="openModal">Показать тарифы для бизнеса</a>
+
+
+
+
+            <!-- Модалка -->
+
+               <div id="modal" class="modal">
+                 <div class="modal-content">
+                   <h2 class="modal__title">Бизнес-тарифы</h2>
+                   <ul>
+                     <li><span>Реклама у блогера</span>
+                        <span>300 000 руб./пост</span>
+                    </li>
+                     <li><span>Накрутка подписчиков</span>
+                    <span>от 1 руб./шт</span>
+                    </li>
+                     <li><span>Лайки от ботов</span>               
+                        <span>от 20 коп./лайк</span>
+                    </li>
+                     <li><span>Ваш продакт-плейсмент</span>
+                    <span>Индивидуально</span>
+                </li>
+                   </ul>
+                   <button id="closeModal">Закрыть окно</button>
+                 </div>
+                 
+               </div>
+
+
+            <!-- Модалка -->
+
+
+
+
+
             </div>
         </section>
-            
-<section>
-    
+
+<section class="fifth-section">
+    <div class="information-page">
+        <div class="information-text">
+            <h2>Заинтересовались?</h2>
+            <p>Зарегистрируйтесь, это быстро и бесплатно! <br/>
+                Уже зарегистрированы? Тогда скорее <span class="information-text__authorization">авторизуйтесь.</span></p>
+        </div>
+        <div class="registration__block">
+            <input type=search placeholder="E-mail">
+            <button class="fifth-btn"><span class="details">Регистрация</span><img src="/image/Polygon 1.svg" alt="play"></button>
+        </div>
+        <div class="text-info">
+            <p>Остались вопросы? Мы с радостью на них ответим!</p>
+        </div>
+        <div class="connection">
+            <img src="/image/contacts_icon.png" alt="phone-icon">
+            <p>8 800 555-86-28</p>
+            <img src="/image/contacts_icon (1).png" alt="email-icon">
+            <p>mail@htmlacademy.ru</p>
+        </div>    
+    </div>
 </section>
 
-        
+<section class="sixth-section">
+    <div class="address">
+        <img src="/image/map_mark.png" alt="map-icon">
+        <p>ул. Большая Конюшенная, 19/8</p>
+        <button class="sixth-btn">
+            <a href="https://www.google.com/maps/place/%D0%A7%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F+%D0%BB%D0%B0%D0%B2%D0%BA%D0%B0,+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+62,+%D0%A2%D0%B0%D0%B3%D0%B0%D0%BD%D1%80%D0%BE%D0%B3,+%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+347900/@47.2122868,38.9355559,19z/data=!4m6!3m5!1s0x40e3fd399d76c82f:0xf98e4be65a34b9a5!8m2!3d47.2116654!4d38.9352074!16s%2Fg%2F1q5blc8qt">
+                <span class="route">Проложить маршрут</span><img src="/image/Polygon 1.svg" alt="play">
+            </a>
+        </button>
+</div>
+</section>
+
+<section class="seventh-section">
+    <div class="maps">
+        <iframe
+            width="100%"
+            height="584px"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?q=Таганрог, ул. Петровская 62&output=embed"
+        ></iframe>
+      </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__page">
+        <img src="/image/second_logo.png" alt="logo">
+        <div class="social-media">
+            <a href="#"><img src="/image/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/image/vkontakte.png" alt="vk"></a>
+            <a href="#"><img src="/image/insta.png" alt="insta"></a>
+        </div>
+        <div class="html-academy">
+            <p>Разработано</p>
+            <img src="/image/Лого_html 1.png" alt="html-academy">
+        </div>
     </div>
     
+</footer>
+        
+    </div>
+    <script src="script/app.js"></script>
 </body>
 </html>
