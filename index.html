@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
-
+    <link rel="stylesheet" href="/style/adaptive.css">
     <title>Погнали</title>
 </head>
 <body>
@@ -24,6 +24,7 @@
                      </ul>
                 </div>
             </div>
+            <button class="burger"><img src="image/Menu-icon_tablet.png" alt="burger"></button>
             <div class="authorization">
                 <button class="phone">
                     <img src="/image/phone.png" alt="phone">
@@ -31,44 +32,69 @@
                 <button class="mail">
                     <img src="/image/mail.png" alt="mail">
                 </button>
-                <button class="reg">Авторизация</button>
+                <button class="reg">АВТОРИЗАЦИЯ</button>
             </div>
         </header>
         <section>
             <main>
                 <img class="main__image" src="image/globe-back-desktop.png" alt="main-image">
+                <img class="main__image-tablet" src="/image/globe back tablet.jpg.png" alt="">
                 <div class="first-page">
                 <h1 class="title">В путешествие с крутыми попутчиками!</h1>
-                <div class="traveller">
+                
+                    <div class="traveller">
+                        <img class="tablet-man" src="/image/traveller-illustration-tablet 1.png" alt="tablet-man">
+                        <img class="desktop-man" src="/image/traveller-illustration-desktop 1.png" alt="man">
+        
+                    </div>
+                    <div class="text__block">
+                        <p>«Лучшее приложение, что я видел в жизни!»</p>
+                        <p>Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+                    </div>
+                </div>
+
+                 <!-- Tablet first-page -->
+                <div class="first-page__tablet">
+                    <h1 class="title-tablet">В путешествие с крутыми попутчиками!</h1>
+                <div class="first-page-content">
+                    <div class="traveller-tablet">
+                        <img class="tablet-man" src="/image/traveller-illustration-tablet 1.png" alt="tablet-man">
+                        <img class="desktop-man" src="/image/traveller-illustration-desktop 1.png" alt="man">
+                    </div>
+                    <div class="text__block-tablet">
+                        <p>«Лучшее приложение, что я видел в жизни!»</p>
+                        <p>Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
+                    </div>
+                </div>
+                </div>
+                <!-- Tablet first-page -->
                     
-                    <img src="/image/traveller-illustration-desktop 1.png" alt="man">
-    
-                </div>
-                <div class="text__block">
-                    <p>«Лучшее приложение, что я видел в жизни!»</p>
-                    <p>Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
-                </div>
+                
+                
                 </div>
                 <div class="block">
                     <div class="block__first">
-                        <p>Выберите направление</p>
-                        <span class="text__block-color">1</span>
+                      <p>Выберите направление</p>
+                      <span class="text__block-color">1</span>
                     </div>
                     <div class="block__second">
-                        <p>Изучите идеи путешественников</p>
-                        <span class="text__block-color">2</span>
+                      <p>Изучите идеи путешественников</p>
+                      <span class="text__block-color">2</span>
                     </div>
                     <div class="block__third">
-                        <p>Находите тех, кто похож на вас</p>
-                        <span class="text__block-color">3</span>
+                      <p>Находите тех, кто похож на вас</p>
+                      <span class="text__block-color">3</span>
                     </div>
                     <div class="block__fourth">
-                        <p>Путешествуйте вместе!</p>
-                        <span class="text__block-color">4</span>
+                      <p>Путешествуйте вместе!</p>
+                      <span class="text__block-color">4</span>
                     </div>
-                </div>
+                  </div>
             
         </section>
+
+
+
         <section>
                 <header class="second-header sticky-header">
                     <div class="header__block">
@@ -115,6 +141,7 @@
                     </div>
                     
                     <img class="img-back" src="/image/img_back.png" alt="img_back">
+                    <img class="img-back-tablet" src="image/img_tablet.png" alt="img_back-tablet">
                     </div>
                     
                 </section>
@@ -175,7 +202,7 @@
                             </div>
                             <img class="img-flags"  src="/image/Czech 1.png" alt="Czech ">
                         </div>
-                        
+                        <button class="second-btn__tablet"><span class="details">Показать все</span><img src="/image/Polygon 1.svg" alt="play"></button>
                     </div>
                     <div class="directions">
                         
@@ -235,7 +262,7 @@
                             </div>
                                 <img class="person-image" src="/image/demin-desktop 1.jpg" alt="Петя Демин" >
                                 <div class="travelers-countries">
-                                    <img src="/image/Belgium 50% (1).png" alt="Бельгия">
+                                    <img src="/image/Belgium.png" alt="Бельгия">
                                 <img src="/image/Czech 2.png" alt="Чехия">
                                 </div>
                                 
@@ -252,6 +279,7 @@
                             
                         </div>
                     </div>
+                    <button class="third-btn-tablet"><span class="details">Подробнее</span><img src="/image/Polygon 1.svg" alt="plays"></button>
             </div>
         </section>
 
@@ -288,6 +316,7 @@
                     <div class="phone-image">
                         <img src="/image/rates.png" alt="">
                     </div>
+                    
                 </div>
                <a class="tariffs-buisnes" id="openModal">Показать тарифы для бизнеса</a>
 
@@ -320,15 +349,11 @@
 
 
             <!-- Модалка -->
-
-
-
-
-
             </div>
         </section>
 
-<section class="fifth-section">
+
+    <section class="fifth-section">
     <div class="information-page">
         <div class="information-text">
             <h2>Заинтересовались?</h2>
@@ -347,11 +372,22 @@
             <p>8 800 555-86-28</p>
             <img src="/image/contacts_icon (1).png" alt="email-icon">
             <p>mail@htmlacademy.ru</p>
-        </div>    
-    </div>
-</section>
+        </div> 
 
-<section class="sixth-section">
+        <div class="connection-tablet">
+            <div class="connection-tablet__phone">
+                <img src="/image/contacts_icon.png" alt="phone-icon">
+                <p>8 800 555-86-28</p>
+            </div>
+            <div class="connection-tablet__email">
+                <img src="/image/contacts_icon (1).png" alt="email-icon">
+                <p>mail@htmlacademy.ru</p>
+            </div>
+        </div> 
+    </div>
+    </section>
+
+    <section class="sixth-section">
     <div class="address">
         <img src="/image/map_mark.png" alt="map-icon">
         <p>ул. Большая Конюшенная, 19/8</p>
@@ -360,10 +396,11 @@
                 <span class="route">Проложить маршрут</span><img src="/image/Polygon 1.svg" alt="play">
             </a>
         </button>
-</div>
-</section>
+    </div>
+    </section>
+    
 
-<section class="seventh-section">
+    <section class="seventh-section">
     <div class="maps">
         <iframe
             width="100%"
@@ -375,9 +412,9 @@
             src="https://maps.google.com/maps?q=Таганрог, ул. Петровская 62&output=embed"
         ></iframe>
       </div>
-</section>
-</main>
-<footer class="footer">
+    </section>
+    </main>
+    <footer class="footer">
     <div class="footer__page">
         <img src="/image/second_logo.png" alt="logo">
         <div class="social-media">
@@ -391,8 +428,8 @@
         </div>
     </div>
     
-</footer>
-        
+    </footer>
+
     </div>
     <script src="script/app.js"></script>
 </body>

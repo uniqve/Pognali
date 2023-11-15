@@ -9,26 +9,30 @@
   color: white;
   box-sizing: border-box;
 }
-
-html,
 body {
-  height: 100%;
+
   margin: 0;
   padding: 0;
   font-family: "Blogger Sans";
 }
+.aaaaaa {
+  display: none;
+}
 
 .wrapper {
-  max-width: 1320px;
-  height: 100%;
+  max-width: 91.67%;
   margin: 0px auto;
 }
 .header {
+  width: 100%;
   padding-top: 46px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.burger {
+  display: none;
 }
 .header__block {
   display: flex;
@@ -71,7 +75,7 @@ body {
   
 } */
 .main__image {
-  width: 100%;
+  min-width: 100%;
   height: 750px;
   position: absolute;
   top: 0;
@@ -117,8 +121,8 @@ button {
   height: 18px;
 }
 .reg {
-  width: 188px;
-  height: 50px;
+  display: flex;
+  align-items: center;
   background-color: #ffbd30;
   border: none;
   font-family: "Blogger Sans";
@@ -162,6 +166,11 @@ button {
   margin-top: 10px;
   margin-right: 59px;
 }
+
+.tablet-man {
+  display: none;
+}
+
 .first-page {
   display: flex;
   justify-content: space-between;
@@ -187,23 +196,29 @@ button {
   width: 246px;
   height: 74px;
 }
+.text-adaptive {
+  display: none;
+}
+.first-page__tablet {
+  display: none;
+}
+.main__image-tablet{
+    display: none;
+}
 .block {
   display: flex;
   position: relative;
   top: -220px;
   left: 0;
-  width: 1320px;
+  width: 91%;
+  margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-  /* flex-wrap: wrap; */
 }
 .block__first {
   background-color: #ff8d30;
   border-radius: 20px;
   width: 375px;
   height: 107px;
-  position: absolute;
-  z-index: 7;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -214,9 +229,6 @@ button {
   border-radius: 20px;
   width: 375px;
   height: 107px;
-  position: absolute;
-  left: 345px;
-  z-index: 8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,9 +239,6 @@ button {
   border-radius: 20px;
   width: 375px;
   height: 107px;
-  position: absolute;
-  z-index: 9;
-  left: 690px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,9 +249,6 @@ button {
   border-radius: 20px;
   width: 315px;
   height: 107px;
-  position: absolute;
-  z-index: 10;
-  left: calc(100% - 315px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -436,6 +442,9 @@ button {
   height: 660px;
   margin-top: 148px;
 }
+.img-back-tablet{
+    display: none;
+}
 
 .background-foto {
   position: absolute;
@@ -473,7 +482,9 @@ button {
   width: 287px;
   height: 575px;
 }
-
+.second-btn__tablet{
+display: none;
+}
 .countries {
   margin-top: 249px;
   margin-left: 70px;
@@ -496,7 +507,7 @@ button {
   max-width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 65px;
 }
 .countries::before {
   content: "";
@@ -861,6 +872,9 @@ button {
   touch-action: manipulation;
   z-index: 1;
 }
+.third-btn-tablet{
+    display: none;
+}
 
 .fourth-section {
   width: 100%;
@@ -1064,7 +1078,7 @@ button {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  line-height: 22px; 
+  line-height: 22px;
   border: none;
   font-size: 20px;
   text-align: center;
@@ -1208,6 +1222,9 @@ input[type="search"]::placeholder {
   justify-content: center;
   align-items: center;
 }
+.connection-tablet{
+    display: none;
+}
 .connection img {
   margin-right: 31px;
   width: 90px;
@@ -1239,6 +1256,7 @@ input[type="search"]::placeholder {
   display: flex;
   justify-content: center;
   margin: 116px 0 56px 0;
+  
 }
 .address img {
   width: 90px;
@@ -1350,3 +1368,4 @@ input[type="search"]::placeholder {
   width: 27px;
   height: 34px;
 }
+
