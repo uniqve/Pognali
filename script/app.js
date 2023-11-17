@@ -1,6 +1,4 @@
-document
-  .querySelector(".tariffs-buisnes")
-  .addEventListener("click", function () {
+document.querySelector(".tariffs-buisnes").addEventListener("click", function () {
     document.getElementById("modal").classList.add("active");
   });
 
@@ -31,25 +29,21 @@ closeButton.addEventListener("click", () => {
   header.style.display = "flex";
 });
 
-
 const intrestedBlock = document.querySelector(".intrested");
 const intrestedButton = document.querySelector(".intrested-button");
-const footerBlock = document.querySelector('.footer')
+const footerBlock = document.querySelector(".footer");
 
 intrestedButton.addEventListener("click", () => {
   intrestedBlock.classList.toggle("none");
 });
 
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".sticky-header");
+  const scrollPosition = window.scrollY;
 
-
-
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('.sticky-header');
-    var scrollPosition = window.scrollY;
-  
-    if (scrollPosition > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+  if (scrollPosition > window.innerHeight) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});

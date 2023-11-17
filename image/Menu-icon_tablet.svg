@@ -1,0 +1,25 @@
+<svg width="25" height="11" viewBox="0 0 25 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="11" fill="#E5E5E5"/>
+<g id="Tablet / Scroll Menu" clip-path="url(#clip0_0_1)">
+<rect width="768" height="747" transform="translate(-372 -61)" fill="white"/>
+<path id="back_1" d="M-372 -61H396V1794C396 1827.14 369.137 1854 336 1854H-312C-345.137 1854 -372 1827.14 -372 1794V-61Z" fill="#182044"/>
+<g id="Header_tablet">
+<g id="Menu-icon_tablet">
+<rect id="Rectangle 32" width="25" height="3" rx="1.5" fill="white"/>
+<rect id="Rectangle 33" y="8" width="25" height="3" rx="1.5" fill="white"/>
+</g>
+</g>
+<g id="scroll menu">
+<rect width="768" height="132" transform="translate(-372 -61)" fill="white"/>
+<g id="Menu-icon_tablet_2">
+<rect id="Rectangle 32_2" x="-1" width="25" height="3" rx="1.5" fill="#CCCCCC"/>
+<rect id="Rectangle 33_2" x="-1" y="8" width="25" height="3" rx="1.5" fill="#CCCCCC"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="768" height="747" fill="white" transform="translate(-372 -61)"/>
+</clipPath>
+</defs>
+</svg>
